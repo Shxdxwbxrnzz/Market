@@ -14,11 +14,11 @@ if (itemsDiv) {
     console.log('Поле  clientWight: ', itemsDiv.clientWidth)
     console.log('Поле innerHTML: ', itemsDiv.innerHTML)
 
-    //Додавання тексту в блок
-    itemsDiv.innerText = 'Програмно доданий текст';
-    itemsDiv.innerText += 'Другий програмно доданий текст';
-    //додавання коду в скрипти
-    itemsDiv.innerHTML += '<h1>Програмно доданий текст</h1>';
+    // //Додавання тексту в блок
+    // itemsDiv.innerText = 'Програмно доданий текст';
+    // itemsDiv.innerText += 'Другий програмно доданий текст';
+    // //додавання коду в скрипти
+    // itemsDiv.innerHTML += '<h1>Програмно доданий текст</h1>';
 
     //Додавання відформатованого HTML коду в блок
     for(let i = 0; i< 10; i++){
@@ -26,5 +26,21 @@ if (itemsDiv) {
     }
 } else {
     //вивід повідомлення що блок товарів не знайдено
-    console.log('Перевір код товарів');
+    console.log('Блок не знайдено');
+}
+
+//Створення масиву
+let itemsArray = [
+'Газонокосарка 43',
+'Електричний тример 110',
+'Електрична газонокосарка 23'
+,'Акумуляторний оприскувач 12 N'
+]
+
+
+itemsArray = itemsArray.sort()
+//Виведення масиву у консоль
+console.log (itemsArray)
+for(let i = 0; i < itemsArray.lenght; i++){
+    console.log (i + '-й елемент:', itemsArray[i])
 }
