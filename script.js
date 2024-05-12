@@ -20,27 +20,46 @@ if (itemsDiv) {
     // //додавання коду в скрипти
     // itemsDiv.innerHTML += '<h1>Програмно доданий текст</h1>';
 
-    //Додавання відформатованого HTML коду в блок
-    for(let i = 0; i< 10; i++){
-        itemsDiv.innerHTML += '<div class = "item"></div>'
-    }
-} else {
-    //вивід повідомлення що блок товарів не знайдено
-    console.log('Блок не знайдено');
+//     //Додавання відформатованого HTML коду в блок
+//     for(let i = 0; i< 10; i++){
+//         itemsDiv.innerHTML += '<div class = "item"></div>'
+//     }
+// } else {
+//     //вивід повідомлення що блок товарів не знайдено
+//     console.log('Блок не знайдено');
 }
 
 //Створення масиву
 let itemsArray = [
 'Газонокосарка 43',
 'Електричний тример 110',
-'Електрична газонокосарка 23'
-,'Акумуляторний оприскувач 12 N'
+'Електрична газонокосарка 23',
+'Акумуляторний оприскувач 12 N',
+'Газонокосарка 430',
+'Електричний тример 130',
+'Електрична газонокосарка 320',
+'Акумуляторний оприскувач 12 E'
 ]
+
+if (itemsDiv) {
+    itemsArray.forEach((item, index) =>{
+        itemsDiv.innerHTML += 
+        `
+        <div class = "item">
+        <h2>Товар№${index}</h2>
+        <p>${item}</p>
+        </div>
+        `
+    })
+}
+else {
+    console.log('Блок не знайдено');
+}
 
 
 itemsArray = itemsArray.sort()
 //Виведення масиву у консоль
 console.log (itemsArray)
-for(let i = 0; i < itemsArray.lenght; i++){
+for(let i = 0; i < itemsArray.lenght; i++) {
     console.log (i + '-й елемент:', itemsArray[i])
 }
