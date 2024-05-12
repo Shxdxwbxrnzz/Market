@@ -4,7 +4,7 @@ console.log('Програмно перевірили чи працює конс�
 //Отримання елементу з ідентифікатором
 let itemsDiv = document.getElementById('items');
 
-//перевірки чи знайшли елемент
+//перевірка чи знайшли елемент
 if (itemsDiv) {
     //вивід знайденого елементу
     console.log(itemsDiv);
@@ -46,7 +46,7 @@ if (itemsDiv) {
         itemsDiv.innerHTML += 
         `
         <div class = "item">
-        <h2>Товар№${index}</h2>
+        <h2>Товар №${index += 1}</h2>
         <p>${item}</p>
         </div>
         `
@@ -61,5 +61,5 @@ itemsArray = itemsArray.sort()
 //Виведення масиву у консоль
 console.log (itemsArray)
 for(let i = 0; i < itemsArray.lenght; i++) {
-    console.log (i + '-й елемент:', itemsArray[i])
+    console.log (i + "-й елемент:", itemsArray[i])
 }
