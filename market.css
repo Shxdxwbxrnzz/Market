@@ -49,9 +49,9 @@ div {
   }
 
   .item {
+    width: 200px;
     display: flex;
     text-wrap: wrap;
-    min-width: 200px;
     min-height: 400px;
     margin-bottom: 10px;
     padding: 10px;
@@ -59,6 +59,7 @@ div {
     border-radius: 8px;
     flex-direction: column;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
   }
 
   .item-title {
