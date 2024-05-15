@@ -31,18 +31,54 @@ if (itemsDiv) {
 
 //Створення масиву
 let itemsArray = [
-'Газонокосарка 43',
-'Електричний тример 110',
-'Електрична газонокосарка 23',
-'Акумуляторний оприскувач 12 N',
-'Газонокосарка 430',
-'Електричний тример 130',
-'Електрична газонокосарка 320',
-'Газонокосарка 14-8',
-'Акумуляторний оприскувач Grosstrotter 42',
-'Електричний тример 9-12F',
-'Електрична газонокосарка S-22',
-'Електричний тример 102-D'
+{
+    firstName:"Віталій",
+    lastName:"Шатківський",
+    age:"43",
+    subject:"Інформатика",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/shatkivskyy-v-m/",
+},
+{
+    firstName:"Анжела",
+    lastName:"Лознюк",
+    age:"18",
+    subject:"Українська мова",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/10/photo_2023-10-25_15-46-33-1-693x1024.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/loznyuk-anzhela-leonidivna/",
+},
+{
+    firstName:"Наталія",
+    lastName:"Зинюк",
+    age:"18",
+    subject:"Хімія",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2024/01/zynjuk-natalija-mykolayivna-683x1024.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/zynyuk-nataliya-mykolayivna/",
+},
+{
+    firstName:"Олена",
+    lastName:"Геча",
+    age:"18",
+    subject:"Історія",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/hecha-o-a/",
+},
+{
+    firstName:"Наталія",
+    lastName:"Кучер",
+    age:"18",
+    subject:"Фізика",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/kucher-nataliya-viktorivna-683x1024.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/kucher-n-v/",
+},
+{
+    firstName:"Вікторія",
+    lastName:"Нелипович",
+    age:"18",
+    subject:"Математика",
+    photo:"https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna.jpg",
+    url:"https://lyceum.ztu.edu.ua/team/nelypovych-viktoriya-vitaliyivna/",
+},
 ]
 
 if (itemsDiv) {
@@ -50,8 +86,12 @@ if (itemsDiv) {
         itemsDiv.innerHTML += 
         `
         <div class = "item">
-        <h2>Товар №${index += 1} з ${itemsArray.length}</h2>
-        <p>${item}</p>
+        <h2>Викладач ${index += 1} з ${itemsArray.length}</h2>
+        <p>${item.firstName} ${item.lastName}</p>
+        <p>Вік: ${item.age}</p>
+        <p>Викладає: ${item.subject}</p>
+        <p><img src = "${item.photo}" class="item-image"></p>
+        <p><a href = "${item.url}" target="_blank">Профіль</p>
         </div>
         `
     })
