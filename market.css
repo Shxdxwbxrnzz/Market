@@ -25,7 +25,7 @@ content {
 
   .title {
     background: rgb(253, 48, 48);
-    width: auto;
+    width: 600px;
     margin-top: 20px;
     color: white;
     padding: 10px;
@@ -43,21 +43,20 @@ content {
     padding: 10px;
     display: flex;
     gap: 20px;
-    text-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .item {
-    width: 220px;
+    width: 200px;
     display: flex;
-    text-wrap: wrap;
     min-height: 400px;
     margin-bottom: 10px;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 8px;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
   }
 
@@ -68,10 +67,11 @@ content {
   .item-image {
     height: 200px;
     border-radius: 8px;
-    background-image: url(img/img-3.png);
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+
+  .item-image img{
+    height: 250px;
+    border-radius: 8px;
   }
 
   .parts-pay {
@@ -85,8 +85,11 @@ content {
     width: 20px;
   }
 
+  .parts-pay img {
+    height: 24px;
+  }
+
   .price {
-    border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
     padding: 5px 10px;
     display: flex;
@@ -117,6 +120,7 @@ content {
     background: rgb(253, 48, 48);
     color: white;
     border-radius: 5px;
+    padding: 7px;
     display: flex;
     align-items: center;
   }
