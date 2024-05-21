@@ -33,7 +33,7 @@ if (itemsDiv) {
 let itemsArray = [
     {
         title: "Мотокоса 43",
-        image: "img/img-3.png",
+        image: "img/img-3.jpg",
         priseNormal: 5499,
         priseDiscount: 4497,
         priseCoupon: 4395,
@@ -42,30 +42,30 @@ let itemsArray = [
     },
     {
         title: "Електричний тример 110",
-        image: "https://rebiner.ua/media/catalog/product/cache/d7cfe7d50445e7d0b720212a2e24da17/r/g/rgt850.jpg",
-        priseNormal: 5499,
-        priseDiscount: 4497,
-        priseCoupon: 4395,
-        lapka: 6,
-        pb: 8,
+        image: "img/img-4.jpg",
+        priseNormal: 4497,
+        priseDiscount: 3498,
+        priseCoupon: 3396,
+        lapka: 8,
+        pb: 10,
     },
     {
         title: "Електрична газонокосарка 32",
-        image: "img/img-3.png",
-        priseNormal: 5499,
-        priseDiscount: 4497,
-        priseCoupon: 4395,
-        lapka: 6,
-        pb: 8,
+        image: "img/img-5.jpg",
+        priseNormal: 4497,
+        priseDiscount: 3297,
+        priseCoupon: 3195,
+        lapka: 12,
+        pb: 14,
     },
     {
         title: "Акумуляторний обприскувач 12 N",
-        image: "img/img-3.png",
-        priseNormal: 5499,
-        priseDiscount: 4497,
-        priseCoupon: 4395,
-        lapka: 6,
-        pb: 8,
+        image: "img/img-6.jpg",
+        priseNormal: 2190,
+        priseDiscount: 1698,
+        priseCoupon: 1596,
+        lapka: 8,
+        pb: 10,
     },
 
 ]
@@ -78,7 +78,7 @@ if (itemsDiv) {
         <div class="item-title">${item.title}</div>
               
         <div class="item-image">
-        <img src="${item.image}" alt="Мотокоса">
+        <img src="${item.image}" alt="${item.title}">
         </div>
         
         <div class="parts-pay">
